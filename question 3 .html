@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List and City List</title>
+    <style>
+        /* Styling for the unordered movie list */
+        ul.movies {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        ul.movies li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        ul.movies li.favorite {
+            font-weight: bold;
+            color: red;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+        /* Styling for the ordered city list */
+        ol.cities {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ol.cities li {
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        ol.cities li:nth-child(odd) {
+            color: #336699;
+        }
+
+        ol.cities li:nth-child(even) {
+            color: #cc6600;
+        }
+
+        ol.cities li:hover {
+            font-weight: bold;
+            text-decoration: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>My Favorite Movies</h2>
+    <ul class="movies">
+        <li>The Shawshank Redemption</li>
+        <li class="favorite">Inception</li>  <!-- Favorite movie with unique styling -->
+        <li>The Dark Knight</li>
+        <li>Interstellar</li>
+        <li>Pulp Fiction</li>
+    </ul>
+
+    <h2>City List</h2>
+    <ol class="cities">
+        <li>New York</li>
+        <li>London</li>
+        <li>Tokyo</li>
+        <li>Paris</li>
+        <li>Sydney</li>
+    </ol>
+
+</body>
+</html>
